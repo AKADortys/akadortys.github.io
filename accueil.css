@@ -146,6 +146,7 @@ nav {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
+    top: 0px;
 }
 
 nav>ul::after {
@@ -271,4 +272,9 @@ iframe {
     /* Définir la largeur de l'iframe */
     height: 450px;
     /* Définir la hauteur de l'iframe */
+}
+.main{
+    margin: 75px auto;
+    border: #f6eba7 5px solid;
+    width: 95%;
 }
