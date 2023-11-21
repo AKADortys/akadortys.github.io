@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le P'tit Vivo</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+
+<body>
+    <!--je vais faire ici le modèles de la barre haute du site (model:) je fais donc un tableau qui ne vas contenir qu'une seule ligne. Elle même composée de plusieurs autres cellules-->
+    <nav>
+        <ul>
+            <li id="logoVivo0"><img src="Images/fondecran.png" id="logoVivo"></li>
+            <li id="nomserv">Au P'tit Vivo Traiteur, Plats à emporter</li>
+            <li class="login"><a href="login.html">Se connecter</a></li>
+            <li class="contact"><a href="nouscontacter.html">Nous contacter</a></li>
+            <li class="command"><a href="commander.html">Commander</a>
+                <ul class="sousmenu">
+                    <li><a href="commander.html#menu">Menu du jour</a></li>
+                    <li><a href="commander.html#chafro">Charcuterie/Fromage</a></li>
+                    <li><a href="commander.html#dessert">Desserts</a></li>
+                    <li><a href="commander.html#boiss">Boissons</a></li>
+                </ul>
+            </li>
+            <li class="produit"><a href="#">Information</a>
+                <ul class="sousmenu">
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="mentionLegale.html">Mentions légales</a></li>
+                </ul>
+            </li>
+            <li class="accueil"><a href="accueil.html">Accueil</a></li>
+        </ul>
+    </nav>
+    <!--Je viens de tout relire et en vrai, beaucoup de balise sont inutile ici puisque modifiable en css mais vue que je l'ai fait avant d'utiliser ce dernier. je devrais le refaire -->
+    <div class="titre">
+        <br><br><br><br><br>
+        <table align="center">
+            <tr>
+                <td align="center"><img src="Images/food4.jpg" class="food"></td>
+                <td align="center" class="hudacc1">
+                    <a class="txthud" href="nouscontacter.html">Nous contacter</a>
+                </td>
+                <td align="center"><img src="Images/food.jpg" class="food"></td>
+                <td class="hudacc1" align="center">
+                    <a class="txthud" href="commander.html#chafro">La carte</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="annonce" colspan="4">
+                    Cadre des annonces
+                </td>
+            </tr>
+            <tr>
+                <td class="hudacc1" align="center">
+                    <a href="commander.html#menu" class="txthud">
+                        Le menu du jour
+                    </a>
+                </td>
+                <td align="center">
+                    <img src="Images/food3.jpg" class="food">
+                </td>
+                <td class="hudacc1" align="center">
+                    <a href="login.html" class="txthud">
+                        Se connecter
+                    </a>
+                </td>
+                <td align="center">
+                    <img src="Images/fondecran2.jpg" class="food">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    <br><br><br><br><br>
+    <!--ici juste un div qui sert globalement à regrouper plusieurs éléments. Ici la photo du "client" (l'historique peut être à retravailler)-->
+    <div class="hist">
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <img src="Images/photosimon.png" id="photosimon">
+                    </td>
+                    <td id="txthist">
+                        <p>
+                            <center>Au P'tit Vivo</center>
+                        <p>Après de nombreuses années au service du Vivo.le jeune Simon a decidé de continuer le
+                            services traiteur au sein de l'entité de Dottignies.</p>
+
+
+                        <p>met toute son expérience et son professionnalisme au service des clients par la préparation
+                            des repas à emporter,
+
+                            en gardant le savoir-faire et la qualité des produits Vivo.</p>
+
+
+                        <p>C'est en hommage à ses anciens employeurs que Simon a appelé son service traiteur le P'tit
+                            Vivo.</p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <br>
+    <!--et ici enfin le formulaire seul dans un div mais à retravailler-->
+    <div id="basDePage">
+        <br>
+        <table id="questiontab" align="center">
+            <tr>
+                <th align="center" colspan="2">
+                    Inscription à la newsletter :
+                </th>
+            </tr>
+            <tr>
+                <td align="right">Nom : </td>
+                <td><input type="texte" /></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Prenom :
+                </td>
+                <td>
+                    <input type="texte" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Email :
+                </td>
+                <td>
+                    <input type="mail" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit" value="envoyer" />
+                </td>
+            </tr>
+        </table>
+        <br>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.610494302032!2d3.300840612218087!3d50.727164967282796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32408174fbeeb%3A0x69dde490a4e5629a!2sRue%20de%20Saint-L%C3%A9ger%208%2C%207711%20Mouscron!5e0!3m2!1sfr!2sbe!4v1698995493751!5m2!1sfr!2sbe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+    <p id="bdp">Conception : AKADortys | Design : Seiko | Projet d'école</p>
+</body>
+
+</html>

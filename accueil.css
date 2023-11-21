@@ -1,0 +1,274 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+.titre {
+    height: 80%;
+    width: 100%;
+    background-image: url(Images/fondecran1.jpg);
+    /*j'utilise alors une image de fond url important gardez les fichiers ensemble à voir si ça deviens vite un calvaire avec autant de fichier au même endroit */
+    background-size: cover;
+    /*je lui dit de cover ici pour remplir l'éléments dans lequel il se trouve en ajustant sa taille pour ne pas déborder il en existe d'autres mais juste taper cet attribut sur google j'ai la flemme d'expliquer */
+    top: 5%;
+    /*je lui dit de se placer à une certaine distance du haut de la page pour ne pas être cacher par la barre du haut */
+    left: 0px;
+    /*ici pour le coller à la bordure gauche de la page */
+}
+
+.hudacc1 {
+    table-layout: fixed;
+    /*bizzare je me rappel pas de celui là mais je suis fatigué donc on abrège */
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    font-size: larger;
+    /*je modifie un peu l'écart entre les cellules du tableau */
+    text-decoration: none;
+}
+
+.txthud {
+    text-decoration: none;
+    color: #f6eba7;
+}
+
+.hudacc1:hover {
+    border: 2px outset #f6eba7;
+    height: 248px;
+    width: 248px;
+}
+
+.hudacc1>a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.food {
+    width: 250px;
+    height: 250px;
+}
+
+#bdp {
+    text-align: center;
+    color: #f6eba7;
+    padding: 5px;
+    background-color: #252525;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.annonce {
+    border: 5px outset #f6eba7;
+    /*je definis les bordure dans cet ordre taille, style, couleur */
+    border-collapse: collapse;
+    /*sert à fusionner les bordures */
+    background-color: grey;
+    table-layout: fixed;
+    height: 350px;
+
+}
+
+#questiontab {
+    width: 50%;
+    height: 450px;
+    color: #f6eba7;
+    background-color: black;
+    border: 5px outset #f6eba7;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+#photosimon {
+    width: 80%;
+    height: 100%;
+}
+
+#txthist {
+    color: #f6eba7;
+    font-family: Arial, Helvetica, sans-serif;
+    /*modifie la police d'écriture on peut en mettre plusieur car certains navigateur ne sont pas compatible avec toute les polices */
+    font-size: larger;
+    font-style: italic;
+}
+
+#logoVivo {
+    width: 20%;
+    height: 20%;
+
+}
+
+#caseLogoVivo {
+
+    vertical-align: bottom;
+    /*j'alligne quelques vers le bas de son éléments conteneur */
+    font-size: 100%;
+}
+
+#tabBarre {
+    border-collapse: collapse;
+    position: fixed;
+    /*cet attribut est pratique pour placer certains éléments il y a plusieurs valeur existante qui ne sont pas nombreuse mais vous savez la suite  */
+    top: 0px;
+    left: 0px;
+
+}
+
+.hist {
+    background-color: black;
+    border: 2.5px solid #f6eba7;
+
+}
+
+#form {
+
+    width: 50%;
+    height: 100%;
+}
+
+#div01 {
+    width: 100%;
+    height: 80%;
+}
+
+#basDePage {
+    background-image: url(Images/fondecran4.jpg);
+    height: 30%;
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+}
+
+nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    float: right;
+    position: relative;
+}
+
+.sousmenu {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    padding: 20px 30px;
+    color: #f6eba7;
+}
+
+nav li:hover .sousmenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.sousmenu li {
+    border-bottom: 1px solid #f6eba7;
+}
+
+.sousmenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #f6eba7;
+    width: 270px;
+}
+
+.login:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.accueil:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.command:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.contact:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.produit:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.accueil .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+.command .sousmenu {
+    color: #f6eba7;
+    background-color: grey;
+}
+
+.contact .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+.produit .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+#logoVivo {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    left: 0px
+}
+
+#nomserv {
+    color: #f6eba7;
+    top: 25px;
+    font-size: x-small;
+    font-weight: bold;
+    left: 0px; 
+    padding-right: 200px;
+    float: left;
+}
+#logoVivo0{
+    float: left;
+}
+iframe {
+    width: 45%;
+    /* Définir la largeur de l'iframe */
+    height: 450px;
+    /* Définir la hauteur de l'iframe */
+}
