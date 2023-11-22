@@ -1,0 +1,269 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    top: 0px;
+}
+
+nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    float: right;
+    position: relative;
+}
+
+.sousmenu {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    padding: 20px 30px;
+    color: #f6eba7;
+}
+
+nav li:hover .sousmenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.sousmenu li {
+    border-bottom: 1px solid #f6eba7;
+}
+
+.sousmenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #f6eba7;
+    width: 270px;
+}
+
+.accueil:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.command:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.contact:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.produit:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+}
+
+.login:hover {
+    border-top: 5px solid#f6eba7;
+    background-color: black;
+
+}
+
+.accueil .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+.command .sousmenu {
+    color: #f6eba7;
+    background-color: grey;
+}
+
+.contact .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+.produit .sousmenu {
+    background-color: grey;
+    color: #f6eba7;
+}
+
+#logoVivo {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    left: 0px;
+
+}
+
+#logoVivo0 {
+    float: left;
+}
+
+#nomserv {
+    color: #f6eba7;
+    top: 25px;
+    font-size: smaller;
+
+    font-size: x-small;
+    font-weight: bold;
+    float: left;
+}
+/* barre  de navigations*/
+
+.Page{
+    background-color: grey ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+.sidebar{
+    width: 15%;
+    float:left;
+    background-color: rgb(19, 32, 28);
+    color: aliceblue;
+    min-height:  1410px;
+}
+.Main{
+    width: 85%;
+    float: right;
+    background-color:rgb(71, 46, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.DayMenu{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkgreen;
+    border: black 3px solid;
+    border-radius: 10%;
+    box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
+}
+.DayMenu>table img {
+    width: 100px;
+    height: 100px;
+}
+.DayMenu>table{
+    margin: 8px;
+    width: 15%;
+    color: #f6eba7;
+    font-size: large;
+    border: #f6eba7 3px solid;
+    border-radius: 10%;
+
+}
+.DayMenu h4{
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+    color: #f6eba7;
+}
+.nepasmanquer{
+    width: 20%;
+    background-color: rgb(59, 58, 58);
+    height: 385px;
+    color: #f6eba7;
+    text-align: center;
+    border: #f6eba7 3px solid;
+    border-radius: 10%;
+    box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
+}
+.bandeauMain01{
+    width: 95%;
+    text-align: center;
+    color: #f6eba7;
+    font-size: x-large;
+    border: 2px solid black;
+    padding: 25px;
+    background-color: rgb(59, 58, 58);
+}
+.cadreHorai{
+    width: 35%;
+    border: #f6eba7 3px outset;
+    font-size: larger;
+    color: #f6eba7;
+    text-align: center;
+    background-color: black;
+    box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
+}
+.cadreHorai th{
+    font-weight: bold;
+    color: green;
+}
+.cadreHorai td{
+    padding: 10px;
+}
+.reseauSoci{
+    background-color: black;
+    border-bottom: 3px solid #f6eba7;
+    border-top: 3px solid #f6eba7;
+    padding: 10px;
+    width: 15%;
+    margin: 10px;
+    box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
+}
+.reseauSoci p {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: green;
+    font-size: large;
+    text-align: center;
+}
+.contactimg{
+    width: 20%;
+}
+.Cadreinterface{
+    width: 95%;
+    height: 50vh;
+    padding: auto;
+    font-size: larger;
+    background-color: rgb(19, 32, 28);
+    text-align: center;
+    color: aliceblue;
+    border: #f6eba7 3px outset;
+    border-radius: 10%;
+    box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
+}
+.foot{
+    text-align: center;
+    color: #f6eba7;
+    padding: 5px;
+    background-color: #252525;
+    margin-bottom: 0px;
+
+}
