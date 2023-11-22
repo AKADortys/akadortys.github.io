@@ -166,7 +166,13 @@ nav li:hover .sousmenu {
 
 
 }
+.main{
+    width: 85%;
+    margin: 70px auto;
+    border: #f6eba7 5px outset;
+    padding: 5px;
 
+}
 #bdp {
     text-align: center;
     color: #f6eba7;
@@ -211,7 +217,7 @@ h4 {
 .div10>table {
     background-color: rgb(71, 46, 0);
     border-spacing: 25px;
-    width: calc(30.33% - 10px);
+    width: calc(25% - 10px);
     border: 1px solid black;
     margin: 10px;
     height: 100%;
@@ -220,8 +226,8 @@ h4 {
 }
 
 .div10>table img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 1px solid #f6eba7;
 
 }
@@ -295,7 +301,8 @@ section {
 }
 
 .imgForm {
-    width: 45%;
+    width: 35%;
+    height: 55vh;
     display: block;
     border: 4px outset #f6eba7;
     margin-bottom: 15px;

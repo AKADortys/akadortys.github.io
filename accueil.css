@@ -5,6 +5,13 @@ body {
     background-color: black;
 
 }
+.main{
+    width: 93%;
+    margin: 70px auto;
+    border: #f6eba7 5px outset;
+    padding: 5px;
+
+}
 
 .titre {
     height: 80%;
@@ -146,6 +153,7 @@ nav {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
+    top: 0px;
 }
 
 nav>ul::after {

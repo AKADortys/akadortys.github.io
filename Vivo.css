@@ -4,6 +4,13 @@ body {
     background-color: black;
 
 }
+.main{
+    width: 93%;
+    margin: 70px auto;
+    border: #f6eba7 5px outset;
+    padding: 5px;
+
+}
 
 #div05 {
     background-color: black;
@@ -146,7 +153,6 @@ a:hover {
 }
 
 #div01 {
-    padding-top: 68px;
     background-color: orange;
 }
 
