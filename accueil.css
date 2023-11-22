@@ -280,3 +280,8 @@ iframe {
     height: 450px;
     /* Définir la hauteur de l'iframe */
 }
+.main{
+    margin: 75px auto;
+    border: #f6eba7 5px solid;
+    width: 95%;
+}

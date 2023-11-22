@@ -301,8 +301,7 @@ section {
 }
 
 .imgForm {
-    width: 35%;
-    height: 55vh;
+    width: 45%;
     display: block;
     border: 4px outset #f6eba7;
     margin-bottom: 15px;
@@ -310,4 +309,9 @@ section {
     border-radius: 100px;
     box-shadow: 21px -3px 36px 0px rgba(0,0,0,0.75);
 
+}
+.main{
+    border: #f6eba7 4px solid;
+    width: 95%;
+    margin: 75px auto;
 }

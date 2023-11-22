@@ -334,3 +334,8 @@ nav li:hover .sousmenu {
 #logoVivo0{
     float: left;
 }
+.main{
+    border: #f6eba7 4px solid;
+    width: 95%;
+    margin: 75px auto;
+}
