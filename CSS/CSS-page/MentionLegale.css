@@ -139,7 +139,8 @@ nav li:hover .sousmenu {
     font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     width: 90%;
     margin: 18px;
-    font-weight: bolder;
+    font-weight: bolder; 
+    font-size: larger;
 }
 
 .main {
@@ -184,7 +185,7 @@ h1 {
     background-color: rgb(71, 46, 0);
     align-content: center;
     padding: 5px;
-    background-image: url(fondecran4.jpg);
+    background-image: url(Images/fondecran4.jpg);
     background-size: cover;
 }
 
