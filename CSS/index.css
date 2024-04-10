@@ -1,0 +1,35 @@
+header{
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+header span{
+    font-weight: bolder;
+}
+
+header img{
+    width: 15%;
+}
+
+header ul{
+    width: 80%;
+    list-style: none;
+}
+
+main{
+    padding: 5px;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    border: 3px outset var(--main-border-color);
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-txt-color);
+}

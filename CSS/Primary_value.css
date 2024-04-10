@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, 'Courier New', Courier, monospace,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+:root {
+    --header-bg-color: grey;
+    --header-txt-color: gold;
+    --main-bg-color: rgba(100, 45, 3, 0.761);
+    --main-txt-color: rgb(250, 245, 245);
+    --main-border-color: rgb(241, 209, 28);
+    --footer-bg-color: gray;
+    --footer-txt-color: gold;
+    
+}
+
+
