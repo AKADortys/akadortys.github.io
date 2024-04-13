@@ -64,7 +64,9 @@ h2{
 }
 
 .sub-experience{
+    width: 250px;
     margin: 5px;
+    transition: all 0.25s ease;
 }
 
 
@@ -76,11 +78,15 @@ h2{
 
 .sub-experience>h2, .sub-experience>p{
     display: none;
+    padding: 5px;
 }
 
 
 .sub-experience:hover{
     width: 500px;
+    background-color: rgba(128, 128, 128, 0.635);
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 .sub-experience:hover img{
