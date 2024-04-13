@@ -64,31 +64,55 @@ h2{
 }
 
 .sub-experience{
-    width: 45%;
     margin: 5px;
-    background-color: rgba(240, 248, 255, 0.26);
-    padding: 0 5px;
-    border: 2px inset gold;
 }
 
+
+.sub-experience>img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.sub-experience>h2, .sub-experience>p{
+    display: none;
+}
+
+
+.sub-experience:hover{
+    width: 500px;
+}
+
+.sub-experience:hover img{
+    display : none;
+}
+
+.sub-experience:hover p, .sub-experience:hover h2{
+    display: block;
+}
+
+header>ul img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+}
 
 header span{
     font-weight: bolder;
 }
 
-header img{
+header>img{
     width: 20%;
-    border: 2px outset gold
+    border: 2px solid gold;
+    border-radius: 100%;
 }
 
 header ul{
-    width: 70%;
+    width: 450px;
     list-style: none;
 }
 
-header li{
-    padding: 8px 0;
-}
 
 main{
     padding: 5px;
