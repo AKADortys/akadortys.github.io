@@ -1,18 +1,9 @@
-header{
-    background-color: var(--header-bg-color);
-    color: var(--header-txt-color);
-    display: flex ;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-#experience{
+#experience {
+    width: 50%;
     background-color: rgba(128, 128, 128, 0.549);
-    padding: 0 5px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -20,114 +11,61 @@ header{
 }
 
 
-#formation{
+#formation {
+    width: 50%;
     background-color: rgba(128, 128, 128, 0.477);
-    padding: 0 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     margin: 5px 0;
 }
 
-
-h1{
-    width: 90%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 5px 0;
-    background-color: aliceblue;
-    color: black;
-    border: 2px solid black;
-}
-
-h2{
-    color: gold;
-    text-decoration: underline yellow;
-    width: 100%;
-    text-align: center;
+.sub-formation:hover p{
+    display: block;
 }
 
 
-.sub-formation{
-    width: 45%;
+.sub-formation {
+    width: 95%;
     margin: 5px;
     background-color: rgba(240, 248, 255, 0.26);
     padding: 0 5px;
-    border: 2px inset gold;    
+    border: 2px inset gold;
+    transition: opacity 2s;
 }
 
-.sub-formation span{
+.sub-formation p{
+    display: none;
+}
+
+.sub-formation span {
     font-weight: bolder;
     color: limegreen;
 }
 
-.sub-experience{
-    width: 250px;
+.sub-experience {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 5px;
-    transition: all 0.25s ease;
+    background-color: rgba(240, 248, 255, 0.19);
 }
 
 
-.sub-experience>img{
-    width: 250px;
-    height: 250px;
+.sub-experience>img {
+    width: 100px;
+    height: 100px;
 }
 
 
-.sub-experience>h2, .sub-experience>p{
+.sub-experience>h2,
+.sub-experience>p {
+    padding: 5px;
     display: none;
-    padding: 5px;
 }
 
-
-.sub-experience:hover{
-    width: 500px;
-    background-color: rgba(128, 128, 128, 0.635);
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-.sub-experience:hover img{
-    display : none;
-}
-
-.sub-experience:hover p, .sub-experience:hover h2{
-    display: block;
-}
-
-header>ul img{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 15px;
-}
-
-header span{
-    font-weight: bolder;
-}
-
-header>img{
-    width: 20%;
-    border: 2px solid gold;
-    border-radius: 100%;
-}
-
-header ul{
-    width: 450px;
-    list-style: none;
-}
-
-
-main{
-    padding: 5px;
-    background-color: var(--main-bg-color);
-    color: var(--main-txt-color);
-    border: 3px outset var(--main-border-color);
-}
-
-footer{
-    background-color: var(--footer-bg-color);
-    color: var(--footer-txt-color);
-}
