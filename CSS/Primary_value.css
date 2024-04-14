@@ -29,16 +29,14 @@ header{
     align-content: center;
 }
 
-header span{
-    font-weight: bolder;
-}
-
 
 
 header ul{
     width: 450px;
     list-style: none;
 }
+
+
 
 main {
     display: flex;

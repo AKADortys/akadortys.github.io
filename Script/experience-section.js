@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
             // Vérifie si la section est actuellement ouverte
             const isOpen = title.style.display === 'block';
 
+            // Ferme toutes les sections si une autre est ouverte
+            if (!isOpen) {
+                subExperiences.forEach((exp) => {
+                    if (exp !== experience) {
+                        exp.querySelector('h2').style.display = 'none';
+                        exp.querySelectorAll('p').forEach(paragraph => {
+                            paragraph.style.display = 'none';
+                        });
+                        exp.querySelector('img').style.display = 'block';
+                    }
+                });
+            }
+
             // Si la section est ouverte, la ferme ; sinon, l'ouvre
             if (isOpen) {
                 title.style.display = 'none';
@@ -27,17 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     paragraph.style.display = 'block';
                 });
                 image.style.display = 'none';
-
-                // Cache les titres, paragraphes et images des autres sections
-                subExperiences.forEach((exp) => {
-                    if (exp !== experience) {
-                        exp.querySelector('h2').style.display = 'none';
-                        exp.querySelectorAll('p').forEach(paragraph => {
-                            paragraph.style.display = 'none';
-                        });
-                        exp.querySelector('img').style.display = 'block';
-                    }
-                });
             }
         });
     });
