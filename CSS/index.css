@@ -23,10 +23,27 @@
 
 
 #info-perso>ul img{
-    width: 50px;
+    width: 60px;
     height: 50px;
     position: relative;
     top: 15px;
+}
+
+#portefo{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.549);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+
+#portefo span{
+    color: red;
 }
 
 #experience {
@@ -38,7 +55,7 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: 5px 0;
+    margin: 0;
 }
 
 
@@ -50,27 +67,34 @@
     align-items: center;
     justify-content: center;
     align-content: flex-start;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .sub-formation:hover p{
-    display: block;
+    opacity: 1;
+}
+
+.sub-formation:hover{
+    height: 200px;
 }
 
 
 .sub-formation {
-    width: 95%;
-    margin: 15px 5px;
+    height: 66px;
+    width: 45%;
+    margin:5px;
     background-color: rgba(240, 248, 255, 0.26);
     padding: 0 5px;
     border: 2px inset gold;
-    transition: opacity 2s;
+    transition: height 0.3s;
     box-shadow: 6px 3px 2px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
 }
 
 .sub-formation p{
-    display: none;
+    opacity: 0;
     width: 100%;
+    transition: opacity 0.8s;
 }
 
 .sub-formation span {
@@ -103,4 +127,29 @@
 }
 
 
+.sub-portefo{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.37);
+    margin: 5px;
+}
 
+
+.sub-portefo>p>a{
+    background-color: black;
+    border: 3px goldenrod outset;
+    padding: 10px 5px;
+    color: gold;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.sub-portefo>p>a:hover{
+    background-color: goldenrod;
+    border: black 3px outset;
+    color: black;
+}
