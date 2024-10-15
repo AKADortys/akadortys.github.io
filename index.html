@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <!-- Déclaration du type de document et langue par défaut (anglais) -->
+  <head>
+    <!-- Informations sur les métadonnées du document -->
+    <meta charset="UTF-8" /> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Pour adapter le site aux écrans de différentes tailles -->
+    <title>Ancel Thibault</title> <!-- Titre de la page affiché dans l'onglet -->
+    
+    <!-- Inclusion de plusieurs feuilles de style CSS pour la mise en forme de la page -->
+    <link rel="stylesheet" href="css/css_keyframe.css" />
+    <link rel="stylesheet" href="css/css_class.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/css_id.css" />
+  </head>
+  <body>
+    <!-- Conteneur pour les vagues d'animation -->
+    <div>
+      <div class="wave"></div> <!-- Une vague animée -->
+      <div class="wave"></div> <!-- Deuxième vague -->
+      <div class="wave"></div> <!-- Troisième vague -->
+    </div>
+
+    <!-- Barre latérale avec des images représentant différentes sections -->
+    <aside>
+      <img src="image/couche (1).png" alt="main logo" id="loger"> <!-- Logo principal -->
+      <ul id="list"> <!-- Liste d'éléments de navigation -->
+        <!-- Chaque élément de la liste contient une image qui représente une section spécifique -->
+        <li data-section="section0">
+          <img src="image/photo_cv.jpg" alt="Ma photo" /> <!-- Photo de profil -->
+        </li>
+        <li data-section="section"> 
+          <img src="image/Unofficial_JavaScript_logo_2.svg.png" alt="Logo JavaScript" /> <!-- Logo JavaScript -->
+        </li>
+        <li data-section="section1">
+          <img src="image/html5-css3-hd.jpg" alt="HTML/CSS" /> <!-- Logo HTML/CSS -->
+        </li>
+        <li data-section="section2">
+          <img src="image/PHP-logo.svg.png" alt="Logo PHP" /> <!-- Logo PHP -->
+        </li>
+        <li data-section="section3">
+          <img src="image/mysql.png" alt="Logo MySQL" /> <!-- Logo MySQL -->
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal qui est affiché au centre de la page -->
+    <main>
+      <!-- Section A propos de moi -->
+      <div id="section0" class="Content">
+        <h1>A propos de moi</h1> <!-- Titre de la section -->
+        <button class="close_section_btn">X</button> <!-- Bouton pour fermer la section -->
+        <section id="photo_cv">
+          <img src="image/photo_cv.jpg" alt="Ma photo" /> <!-- Photo de profil -->
+        </section>
+        <section id="experience">
+          <h2>Expérience</h2>
+          <!-- Liste des expériences professionnelles -->
+          <ul>
+            <li>Développeur web depuis 2020</li>
+            <li>Expérience dans le développement front-end avec HTML, CSS et JavaScript</li>
+            <li>Expérience dans le développement back-end avec PHP et MySQL</li>
+            <li>Initié au framework Express JS</li>
+            <li>Initié au framework Laravel</li>
+          </ul>
+          <h2>Compétences</h2>
+          <!-- Liste des compétences avec des barres de progression -->
+          <ul>
+            <li>
+              Connaissance de HTML5, CSS3, et JavaScript
+              <div class="progress-bar">
+                <div class="progress" data-progress="70"></div> <!-- Barre de progression pour HTML/CSS/JS -->
+              </div>
+            </li>
+            <li>
+              Création de sites web responsive et adaptatifs
+              <div class="progress-bar">
+                <div class="progress" data-progress="50"></div> <!-- Barre de progression pour responsive design -->
+              </div>
+            </li>
+            <li>
+              Création de composants réutilisables
+              <div class="progress-bar">
+                <div class="progress" data-progress="75"></div> <!-- Barre de progression pour composants réutilisables -->
+              </div>
+            </li>
+            <li>
+              Manipulation du DOM pour créer des effets visuels
+              <div class="progress-bar">
+                <div class="progress" data-progress="75"></div> <!-- Barre de progression pour DOM manipulation -->
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="Formation">
+          <h2>Formation</h2>
+          <!-- Liste des formations -->
+          <ul>
+            <li>Bachelier en informatique</li>
+            <li>Certificat d'aptitude en gestion réseau</li>
+            <li>Formation continue en développement web</li>
+            <li>Gestion de base de données</li>
+          </ul>
+        </section>
+        <section id="reseau">
+          <!-- Liens vers les réseaux sociaux GitHub et LinkedIn -->
+          <ul>
+            <li>
+              <a href="https://github.com/AKADortys">
+                <img src="image/github.png" alt="GitHub logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/thibault-ancel-094721303/">
+                <img src="image/linkedin.png" alt="LinkedIn logo" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Section JavaScript -->
+      <div id="section" class="Content">
+        <img src="image/Unofficial_JavaScript_logo_2.svg.png" alt="Logo JavaScript" /> <!-- Logo JavaScript -->
+        <button class="close_section_btn">X</button> <!-- Bouton pour fermer la section -->
+        <!-- Description des compétences et expériences en JavaScript -->
+        <p>Expérience pratique dans le développement front-end avec JavaScript pour créer des fonctionnalités interactives et dynamiques sur des sites web.</p>
+        <p>Solide connaissance des frameworks populaires tels que Express js et Vue.js pour la construction d'interfaces utilisateur réactives.</p>
+        <p>Expérience dans la création de composants reutilisables pour des applications web complexes.</p>
+        <p>Expérience dans la manipulation du DOM (Document Object Model) pour créer des effets visuels et des animations.</p>
+        <p>Familiarité avec les outils de développement JavaScript tels que npm, Webpack, et Babel pour optimiser et organiser le code.</p>
+        <p>Capacité à résoudre des problèmes complexes grâce à la logique de programmation JavaScript et à l'utilisation de bibliothèques tierces.</p>
+        <h2>Niveau estimé :</h2>
+        <div class="progress-bar">
+          <div class="progress" data-progress="80"></div> <!-- Barre de progression pour JavaScript -->
+        </div>
+      </div>
+      
+      <!-- Section HTML5 et CSS3 -->
+      <div id="section1" class="Content">
+        <img src="image/HTML5.webp" alt="HTML/CSS" /> <!-- Logo HTML/CSS -->
+        <button class="close_section_btn">X</button> <!-- Bouton pour fermer la section -->
+        <!-- Description des compétences et expériences en HTML5 et CSS3 -->
+        <p>Maîtrise des langages HTML5 et CSS3 pour la création de mises en page web modernes et responsives.</p>
+        <p>Expérience dans la création de sites web conformes aux normes de l'accessibilité et de l'interopérabilité.</p>
+        <p>Connaissance approfondie des principes de la conception web, y compris la typographie, la couleur et la mise en page.</p>
+        <p>Capacité à utiliser des préprocesseurs CSS tels que Sass ou Less pour une gestion efficace du style.</p>
+        <p>Expérience dans l'intégration de designs fournis par des équipes de conception graphique en code HTML/CSS fonctionnel.</p>
+        <p>Connaissance de bases sur les keyframes et animations CSS</p>
+        <h2>Niveau estimé :</h2>
+        <div class="progress-bar">
+          <div class="progress" data-progress="80"></div> <!-- Barre de progression pour HTML5/CSS3 -->
+        </div>
+      </div>
+
+      <!-- Section PHP -->
+      <div id="section2" class="Content">
+        <img src="image/PHP-logo.svg.png" alt="Logo PHP" /> <!-- Logo PHP -->
+        <button class="close_section_btn">X</button> <!-- Bouton pour fermer la section -->
+        <!-- Description des compétences et expériences en PHP -->
+        <p>Solide expérience dans le développement back-end avec PHP pour la création de sites web dynamiques et interactifs.</p>
+        <p>Maîtrise des concepts avancés de programmation orientée objet en PHP pour la réutilisation du code et la maintenance facile.</p>
+        <p>Expérience dans l'utilisation de frameworks PHP tels que Laravel et Symfony pour accélérer le processus de développement et assurer la sécurité des applications.</p>
+        <p>Bonne compréhension des bases de données relationnelles et de l'interaction avec celles-ci en utilisant MySQL ou d'autres solutions de base de données.</p>
+        <p>Capacité à résoudre des problèmes de performance et de sécurité liés au développement PHP.</p>
+        <h2>Niveau estimé :</h2>
+        <div class="progress-bar">
+          <div class="progress" data-progress="60"></div> <!-- Barre de progression pour PHP -->
+        </div>
+      </div>
+
+      <!-- Section MySQL -->
+      <div id="section3" class="Content">
+        <img src="image/mysql.png" alt="Logo MySQL" /> <!-- Logo MySQL -->
+        <button class="close_section_btn">X</button> <!-- Bouton pour fermer la section -->
+        <!-- Description des compétences et expériences en MySQL -->
+        <p>Maîtrise de la gestion des bases de données relationnelles avec MySQL.</p>
+        <p>Expérience dans la création, gestion et optimisation de bases de données complexes.</p>
+        <p>Connaissance des requêtes SQL avancées pour récupérer et manipuler des données de manière efficace.</p>
+        <p>Utilisation des procédures stockées, des fonctions et des vues pour améliorer les performances.</p>
+        <p>Expérience avec les outils de gestion de base de données tels que phpMyAdmin et MySQL Workbench.</p>
+        <h2>Niveau estimé :</h2>
+        <div class="progress-bar">
+          <div class="progress" data-progress="65"></div> <!-- Barre de progression pour MySQL -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Inclusion des scripts JavaScript pour interagir avec la page -->
+    <script src="js/div.js"></script> <!-- Script pour la gestion des divisions -->
+    <script src="js/aside.js"></script> <!-- Script pour la gestion du comportement de l'aside -->
+  </body>
+</html>

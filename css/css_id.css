@@ -1,0 +1,79 @@
+#experience {
+    width: 70%;
+}
+
+#Formation {
+    width: 40%;
+}
+
+#photo_cv {
+    width: 30%;
+    position: relative;
+    top: -100px;
+    left: 10px;
+
+}
+
+#section0>section>img {
+    border: 3px solid gold;
+    border-radius: 100px;
+    width: 60%;
+    height: 60%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+#section0>section>ul {
+    list-style: none;
+}
+
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: none;
+    background-color: rgba(51, 51, 187);
+    transition: display 0.3s ease;
+}
+
+#list>li {
+    padding: 30px 3px;
+    background-color: black;
+    width: 99%;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 0;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+#list>li>img {
+    width: 70px;
+    height: 70px;
+    margin-left: 4px;
+    border-radius: 100px;
+    box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 1);
+}
+
+#reseau {
+    width: 40%;
+}
+
+#reseau>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#reseau img {
+    width: 60px;
+    height: 60px;
+    animation: customAni 1s ease-in 0s 1 normal none;
+
+}
