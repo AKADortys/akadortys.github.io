@@ -9,14 +9,14 @@
 #photo_cv {
     width: 30%;
     position: relative;
-    top: -100px;
-    left: 10px;
+    top: -15%;
+    left: 3%;
 
 }
 
 #section0>section>img {
-    border: 3px solid gold;
-    border-radius: 100px;
+    border: 0.3em solid gold;
+    border-radius: 100%;
     width: 60%;
     height: 60%;
     margin-left: 5%;
@@ -39,21 +39,21 @@
 }
 
 #list>li {
-    padding: 30px 3px;
+    padding: 1em 1.5em;
     background-color: black;
     width: 99%;
     transition: all 0.3s ease;
     position: relative;
     left: 0;
     text-align: center;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 
 #list>li>img {
-    width: 70px;
-    height: 70px;
-    margin-left: 4px;
-    border-radius: 100px;
+    width: 5vw;
+    height: 10vh;
+    margin-left: 2%;
+    border-radius: 100%;
     box-shadow: 3px 4px 2px 0px rgba(0, 0, 0, 1);
 }
 
@@ -72,8 +72,52 @@
 }
 
 #reseau img {
-    width: 60px;
-    height: 60px;
-    animation: customAni 1s ease-in 0s 1 normal none;
+    width: 5vw;
+    height: 10vh;
+    animation: customAni 1s ease-in ;
+}
 
+#reseau img:hover {
+    animation: customAni 1s ease-in infinite;
+}
+
+
+#close_info_section{
+    height: 100%;
+    position:inherit ;
+    width: 5%;
+    left: 0;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9em;
+    background-color:rgba(0, 128, 0, 0.362);
+}
+#infoPerso{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    transform: translateX(95%);
+    transition: transform 0.3s ease;
+}
+
+#infoPerso>h1 {
+    color: sandybrown;
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#infoPerso>p {
+    color: black;
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
 }

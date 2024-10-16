@@ -2,8 +2,9 @@ const list = document.querySelector("#list");
 const sections = document.querySelectorAll(".Content");
 const aside = document.querySelector("aside");
 const main = document.getElementsByTagName("main")[0];
+const loger = document.getElementById("loger");
+let asideIsOpen = false;
 let currentIndex = 0;
-
 // Sauvegarde des styles initiaux des sections
 sections.forEach((section) => {
   section.dataset.initialDisplay = section.style.display || "none"; // Sauvegarde l'état de display par défaut
@@ -35,21 +36,22 @@ function CacherSections() {
 }
 
 // Survol de l'aside pour agrandir sa largeur
-aside.addEventListener("mouseover", function () {
-  aside.style.width = "25%";
-  aside.querySelector("ul").style.display = "block"; // Afficher la liste
-  main.style.width = "75%";
-  main.style.left = "25%";
-  document.getElementById("loger").style.display = "none";
-});
-
-// Retour à la taille initiale quand on quitte l'aside
-aside.addEventListener("mouseout", function () {
-  aside.style.width = "2%";
-  aside.querySelector("ul").style.display = "none"; // Masquer la liste
-  main.style.width = "98%";
-  main.style.left = "2%";
-  document.getElementById("loger").style.display = "block";
+aside.addEventListener("click", function () {
+  if (!asideIsOpen){
+    asideIsOpen = true;
+    aside.style.width = "25vw";
+    aside.querySelector("ul").style.display = "block"; // Afficher la liste
+    setTimeout(() => {
+      document.getElementById("loger").style.display = "none";      
+    });
+  }else{
+    asideIsOpen = false;
+    aside.style.width = "2vw";
+    aside.querySelector("ul").style.display = "none"; // Masquer la liste
+    setTimeout(() => {
+      document.getElementById("loger").style.display = "block";
+    }, 300);
+  }
 });
 
 // Boucle sur les éléments enfants de la liste pour gérer les événements
