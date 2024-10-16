@@ -1,0 +1,74 @@
+@media only screen and (max-width: 600px) {
+    /* Ajustement des sections principales */
+    #experience, #Formation {
+        width: 100%; /* Chaque section prendra la pleine largeur */
+    }
+    
+    /* Image du CV */
+    #photo_cv {
+        width: 80%;  /* Réduire la taille pour un meilleur affichage */
+        top: -10%;   /* Ajuster la position si nécessaire */
+        left: 10%;   /* Centrer l'image */
+    }
+    
+    /* Contenu */
+    .Content {
+        width: 90vw;   /* Prendre presque toute la largeur de l'écran */
+        height: auto;  /* Ajuster la hauteur automatiquement */
+        margin: 0.5em; /* Réduire l'espacement pour les petits écrans */
+        padding: 1em;
+    }
+
+    /* Images dans la section contenu */
+    .Content > img {
+        width: 50vw;  /* Ajuster la taille des images à 50% de la largeur de l'écran */
+        height: auto; /* Ajuster automatiquement la hauteur pour conserver les proportions */
+    }
+
+    /* Liste d'éléments (comme #list > li) */
+    #list > li {
+        padding: 0.5em 1em; /* Réduire le padding pour rendre les éléments plus compacts */
+        font-size: 0.9em;   /* Réduire la taille de la police */
+    }
+    
+    /* Boutons */
+    .close_section_btn {
+        width: 10vw;  /* Plus grand bouton pour être plus accessible sur mobile */
+        height: 5vh;
+    }
+
+    /* Barres de progression */
+    .progress-bar {
+        width: 90%;  /* La barre de progression prendra 90% de la largeur de l'écran */
+    }
+    
+    /* Images dans les listes (#list > li > img) */
+    #list > li > img, #reseau img {
+        width: 20vw;   /* Adapter la taille des images */
+        height: auto;
+    }
+
+    /* Reseaux sociaux (icônes) */
+    #reseau {
+        width: 90%;    /* Pleine largeur pour les réseaux sociaux */
+    }
+
+    /* Section info personnelle */
+    #infoPerso {
+        width: 80%;    /* Réduire la largeur pour une meilleure visibilité sur mobile */
+        transform: translateX(10%); /* Ajuster l'affichage */
+    }
+
+    #infoPerso > h1 {
+        font-size: 1.5em; /* Réduire la taille des titres */
+    }
+
+    #infoPerso > p {
+        font-size: 1em; /* Ajuster la taille des paragraphes pour les rendre lisibles */
+    }
+
+    /* Effets visuels (comme les vagues) */
+    .wave {
+        height: 8em;  /* Réduire la taille des vagues pour un écran plus petit */
+    }
+}
