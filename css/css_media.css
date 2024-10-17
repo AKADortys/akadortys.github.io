@@ -1,74 +1,114 @@
-@media only screen and (max-width: 600px) {
-    /* Ajustement des sections principales */
-    #experience, #Formation {
-        width: 100%; /* Chaque section prendra la pleine largeur */
-    }
-    
-    /* Image du CV */
-    #photo_cv {
-        width: 80%;  /* Réduire la taille pour un meilleur affichage */
-        top: -10%;   /* Ajuster la position si nécessaire */
-        left: 10%;   /* Centrer l'image */
-    }
-    
-    /* Contenu */
-    .Content {
-        width: 90vw;   /* Prendre presque toute la largeur de l'écran */
-        height: auto;  /* Ajuster la hauteur automatiquement */
-        margin: 0.5em; /* Réduire l'espacement pour les petits écrans */
-        padding: 1em;
-    }
+/* Styles généraux restent inchangés */
 
-    /* Images dans la section contenu */
-    .Content > img {
-        width: 50vw;  /* Ajuster la taille des images à 50% de la largeur de l'écran */
-        height: auto; /* Ajuster automatiquement la hauteur pour conserver les proportions */
+/* Adaptation pour les petits écrans (inférieurs à 600px) */
+@media (max-width: 600px) {
+    body {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: auto;
     }
-
-    /* Liste d'éléments (comme #list > li) */
-    #list > li {
-        padding: 0.5em 1em; /* Réduire le padding pour rendre les éléments plus compacts */
-        font-size: 0.9em;   /* Réduire la taille de la police */
-    }
-    
-    /* Boutons */
-    .close_section_btn {
-        width: 10vw;  /* Plus grand bouton pour être plus accessible sur mobile */
-        height: 5vh;
-    }
-
-    /* Barres de progression */
-    .progress-bar {
-        width: 90%;  /* La barre de progression prendra 90% de la largeur de l'écran */
-    }
-    
-    /* Images dans les listes (#list > li > img) */
-    #list > li > img, #reseau img {
-        width: 20vw;   /* Adapter la taille des images */
-        height: auto;
-    }
-
-    /* Reseaux sociaux (icônes) */
-    #reseau {
-        width: 90%;    /* Pleine largeur pour les réseaux sociaux */
-    }
-
-    /* Section info personnelle */
+  
     #infoPerso {
-        width: 80%;    /* Réduire la largeur pour une meilleure visibilité sur mobile */
-        transform: translateX(10%); /* Ajuster l'affichage */
+      width: 90%;
+      transform: translateX(0);
+      right: 0;
+      padding: 1em;
     }
-
-    #infoPerso > h1 {
-        font-size: 1.5em; /* Réduire la taille des titres */
+  
+    #infoPerso>h1 {
+      font-size: 1.2em;
     }
-
-    #infoPerso > p {
-        font-size: 1em; /* Ajuster la taille des paragraphes pour les rendre lisibles */
+  
+    #infoPerso>p {
+      font-size: 0.9em;
+      width: 100%;
     }
-
-    /* Effets visuels (comme les vagues) */
+  
+    aside {
+      width: 20vw;
+      height: auto;
+      top: 0;
+      left: 0;
+      transition: none;
+    }
+  
+    #list {
+      display: block;
+      padding: 0.5em 0;
+    }
+  
+    #list>li {
+      padding: 0.5em 0.7em;
+    }
+  
+    #list>li>img {
+      width: 15vw;
+      height: auto;
+    }
+  
+    main {
+      width: 100vw;
+      height: auto;
+      padding: 1em;
+    }
+  
+    .Content {
+      width: 90vw;
+      height: auto;
+      font-size: 1em;
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+  
+    .Content > img {
+      width: 30vw;
+      height: auto;
+    }
+  
+    #section0>section>img {
+      width: 50%;
+      height: auto;
+    }
+  
+    #section0>section>ul {
+      padding: 0.5em 0;
+    }
+  
+    #experience, #Formation, #photo_cv {
+      width: 100%;
+    }
+  
+    #reseau>ul {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    #reseau img {
+      width: 15vw;
+      height: auto;
+    }
+  
+    .progress-bar {
+      width: 90%;
+    }
+  
+    .close_section_btn {
+      width: 5vw;
+      height: auto;
+    }
+  
     .wave {
-        height: 8em;  /* Réduire la taille des vagues pour un écran plus petit */
+      height: 5em;
     }
-}
+  
+    /* Ajustements des animations et transitions pour plus de fluidité sur mobile */
+    .Content, aside, main, #infoPerso {
+      transition: none;
+    }
+  
+    .wave {
+      animation: wave 15s linear infinite;
+    }
+  }
+  

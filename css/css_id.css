@@ -91,6 +91,7 @@
     font-weight: bolder;
     font-size: 0.9em;
     background-color:rgba(0, 128, 0, 0.362);
+    padding: 0.5em;
 }
 #infoPerso{
     position: fixed;
@@ -102,6 +103,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 0.8em;
     width: 30%;
     transform: translateX(95%);
     transition: transform 0.3s ease;
