@@ -103,3 +103,44 @@
   animation: wave 20s -1s reverse infinite;
   opacity: 0.9;
 }
+
+
+.section-hidden {
+  width: 1%;
+  height: 1%;
+  opacity: 0;
+}
+
+.section-visible {
+  width: 100%;
+  height: 100%;
+}
+
+.child-hidden {
+  display: none;
+  opacity: 0;
+}
+
+.child-visible {
+  display: block;
+  opacity: 1;
+}
+
+.aside-open {
+  width: 25%;
+}
+
+.aside-closed {
+  width: 2%;
+}
+
+.list-item-hover {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border-left: 5px solid black;
+}
+
+.progress-active {
+  transition: width 0.5s;
+}

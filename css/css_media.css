@@ -1,7 +1,7 @@
 /* Styles généraux restent inchangés */
 
 /* Adaptation pour les petits écrans (inférieurs à 600px) */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     body {
       flex-direction: column;
       justify-content: flex-start;
@@ -10,32 +10,36 @@
     }
   
     #infoPerso {
-      width: 90%;
+      width: 85%;
       transform: translateX(0);
       right: 0;
       padding: 1em;
     }
   
     #infoPerso>h1 {
-      font-size: 1.2em;
-    }
-  
-    #infoPerso>p {
-      font-size: 0.9em;
       width: 100%;
     }
   
-    aside {
-      width: 20vw;
-      height: auto;
+    #infoPerso>p {
+      width: 100%;
+    }
+
+    aside{
+      width: 7vw;
+      height: 100%;
+    }
+
+    .aside-closed{
+      width: 7vw;
+      height: 100%;
+    }
+  
+    .aside-open {
+      width: 60vw;
+      height: 100%;
       top: 0;
       left: 0;
       transition: none;
-    }
-  
-    #list {
-      display: block;
-      padding: 0.5em 0;
     }
   
     #list>li {
@@ -43,7 +47,7 @@
     }
   
     #list>li>img {
-      width: 15vw;
+      width: 25vw;
       height: auto;
     }
   
