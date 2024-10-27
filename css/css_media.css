@@ -47,7 +47,7 @@
   
     #list>li>img {
       width: 25vw;
-      height: auto;
+      height: 12.5vh;
     }
   
     main {
@@ -61,12 +61,11 @@
       height: auto;
       font-size: 1em;
       padding: 0.5em;
-      margin: 0.5em 0;
     }
   
     .Content > img {
       width: 30vw;
-      height: auto;
+      height: 15vh;
     }
   
     #section0>section>img {
