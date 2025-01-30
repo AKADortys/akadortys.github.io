@@ -1,9 +1,11 @@
 import { ApiRequest } from "../api/github.js";
+import { AppStorage } from "./storage.js";
 
 export class AppDom {
   constructor() {
     this.contentElement = document.getElementById("content");
     this.apiRequest = new ApiRequest();
+    this.appStorage = new AppStorage();
   }
 
   clearContent() {
@@ -27,9 +29,10 @@ export class AppDom {
     }
   }
 
-  displayDetails = (section) => {
+  displayDetails = async (section) => {
     const skillsDetails = document.getElementById("skills-details");
-    const skill = rawData.find((s) => s.id === section);
+    const skill = await this.appStorage.getSkill(section);
+    console.log(skill);
     if (skill) {
       document.getElementById("skills-title").innerText = skill.title;
       document.getElementById("skills-description").innerText =
@@ -92,7 +95,7 @@ export class AppDom {
 
   displayProjet = async () => {
     const projetDetails = document.getElementById("projet-details");
-    const projets = await this.apiRequest.fetchRepos();
+    const projets = await this.appStorage.getRepos();
     projets.forEach((repo) => {
       const elDiv = document.createElement("div");
       elDiv.classList.add(
@@ -113,7 +116,7 @@ export class AppDom {
       projetDetails.appendChild(elDiv);
       const elUrlDiv = document.createElement("div");
       elUrlDiv.classList.add("col-3", "text-center", "p-2", "fade");
-      elUrlDiv.innerHTML = `<a class=" btn btn-dark p-2" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
+      elUrlDiv.innerHTML = `<a class=" link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
       projetDetails.appendChild(elUrlDiv);
     });
   };

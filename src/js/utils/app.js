@@ -1,16 +1,19 @@
 import {} from "../axios.min.js";
 import { AppDom } from "./dom.js";
+import { AppStorage } from "./storage.js";
 
 export class App {
   constructor() {
     this.cachePages = new Map();
     this.defaultPage = "about";
     this.appDom = new AppDom();
+    this.appStorage = new AppStorage();
   }
 
   async init() {
     location.href = `#${this.defaultPage}`;
     await this.loadPage(this.defaultPage);
+    await this.appStorage.fetchData();
 
     window.addEventListener("hashchange", async (e) => {
       const url = new URL(e.newURL);

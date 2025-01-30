@@ -1,6 +1,6 @@
-const rawData = [
+export const rawData = [
   {
-    id: "mysql",
+    name: "mysql",
     title: "MySQL",
     description:
       "MySQL est un système de gestion de base de données relationnelle libre et open-source.",
@@ -15,7 +15,7 @@ const rawData = [
     lvl: 55,
   },
   {
-    id: "nodejs",
+    name: "nodejs",
     title: "Node.js",
     description:
       "Node.js est un runtime JavaScript assez évolué et orienté vers le développement d'applications d'application côté serveur.",
@@ -29,7 +29,7 @@ const rawData = [
     lvl: 70,
   },
   {
-    id: "express",
+    name: "express",
     title: "Express.js",
     description:
       "Express.js est un framework minimaliste pour le développement d'applications web en JavaScript.",
@@ -39,12 +39,12 @@ const rawData = [
     skills: [
       "Création et développement d'applications web avec Express.js en JavaScript.",
       "Déploiement d'applications web avec Docker, incluant des bases de données (MySQL) et des API backend (Node.js).",
-      " Implémentation de middlewares pour la gestion des sessions, la validation des requêtes et la sécurisation via JWT.",
+      " Implémentation de mnamedlewares pour la gestion des sessions, la valnameation des requêtes et la sécurisation via JWT.",
     ],
     lvl: 70,
   },
   {
-    id: "github",
+    name: "github",
     title: "GitHub",
     description:
       "GitHub est une plateforme de développement collaboratif et une version contrôlée de développement logiciel.",
@@ -59,7 +59,7 @@ const rawData = [
     lvl: 60,
   },
   {
-    id: "docker",
+    name: "docker",
     title: "Docker",
     description:
       "Docker est une plateforme de conteneurisation qui facilite la création, l'exécution, et la gestion de conteneurs.",
