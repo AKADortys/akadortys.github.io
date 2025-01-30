@@ -1,0 +1,144 @@
+<section id="skills">
+  <!-- HUB -->
+  <div
+    class="container d-flex align-items-start justify-content-center position-relative flex-wrap rounded-3"
+  >
+    <div
+      class="card2 d-flex position-relative flex-column fade"
+      data-section="mysql"
+    >
+      <div class="imgContainer">
+        <img src="./src/assets/images/mysql.png" />
+      </div>
+      <div class="content">
+        <h2>MySQL</h2>
+        <p>
+          Les bases incluent la création et la gestion de tables, l’écriture de
+          requêtes SQL pour manipuler les données (CRUD), et la compréhension
+          des concepts de clés primaires et étrangères
+        </p>
+      </div>
+    </div>
+    <div
+      class="card2 d-flex position-relative flex-column fade"
+      data-section="nodejs"
+    >
+      <div class="imgContainer">
+        <img src="./src/assets/images/nodejs.png" />
+      </div>
+      <div class="content">
+        <h2>NodeJS</h2>
+        <p>
+          Node.js permet d’exécuter JavaScript côté serveur. Les compétences
+          fondamentales incluent la gestion des modules
+        </p>
+      </div>
+    </div>
+    <div
+      class="card2 d-flex position-relative flex-column fade"
+      data-section="express"
+    >
+      <div class="imgContainer">
+        <img src="./src/assets/images/express.png" />
+      </div>
+      <div class="content">
+        <h2>Express</h2>
+        <p>
+          Express est un framework Node.js qui facilite le développement d’API
+          REST. Les bases incluent la création de routes pour gérer les requêtes
+          HTTP
+        </p>
+      </div>
+    </div>
+    <div
+      class="card2 d-flex position-relative flex-column fade"
+      data-section="github"
+    >
+      <div class="imgContainer">
+        <img src="./src/assets/images/github1.png" />
+      </div>
+      <div class="content">
+        <h2>GitHub</h2>
+        <p>
+          Utilisation de gitbash pour la gestion d'un repository pour pouvoir
+          partager le code facilement
+        </p>
+      </div>
+    </div>
+    <div
+      class="card2 d-flex position-relative flex-column fade"
+      data-section="docker"
+    >
+      <div class="imgContainer">
+        <img src="./src/assets/images/docker.png" />
+      </div>
+      <div class="content">
+        <h2>Docker</h2>
+        <p>
+          L'utilisation de conteners docker pour les différents services utiles
+          pour un developpeur
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- details sur les sections -->
+  <div
+    id="skills-details"
+    class="container position-relative bg-dark opacity-75 rounded-3 fade p-2"
+  >
+    <div class="position-relative">
+      <div class="d-flex justify-content-around mt-2" style="height: 350px">
+        <canvas
+          id="skills-chart"
+          class="bg-white border-primary rounded-3"
+        ></canvas>
+
+        <img
+          id="skills-img"
+          class="img-fluid border border-primary rounded-3 bg-white mt-2 p-1 shadow"
+          src="src/assets/images/mysql.png"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <h2 id="skills-title" class="lead text-primary">MySQL</h2>
+        <p id="skills-description" class="text-info">
+          MySQL est un système de gestion de base de données relationnelle libre
+          et open-source.
+        </p>
+        <p class="text-info">
+          Technologies utilisées :
+          <span class="text-warning" id="skills-tools"></span>
+        </p>
+        <p class="text-info">
+          Langages utilisés :
+          <span class="text-warning" id="skills-languages"
+            >SQL, MySQL Workbench, PHPMyAdmin</span
+          >
+        </p>
+      </div>
+      <div>
+        <ul id="skills-list" class="list-group list-group-flush">
+          <li
+            class="list-group-item list-group-item-dark list-group-item-action"
+          >
+            Création et développement d'applications web avec MySQL en PHP.
+          </li>
+          <li
+            class="list-group-item list-group-item-dark list-group-item-action"
+          >
+            Utilisation des bases de données pour stocker des données et les
+            manipuler avec des requêtes SQL.
+          </li>
+          <li
+            class="list-group-item list-group-item-dark list-group-item-action"
+          >
+            Déploiement d'applications web avec Docker, incluant des bases de
+            données (MySQL) et des API backend (PHP).
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
