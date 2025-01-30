@@ -31,7 +31,6 @@ export class AppDom {
     const skillsDetails = document.getElementById("skills-details");
     const skill = rawData.find((s) => s.id === section);
     if (skill) {
-      document.getElementById("skills-img").src = skill.image;
       document.getElementById("skills-title").innerText = skill.title;
       document.getElementById("skills-description").innerText =
         skill.description;
@@ -104,7 +103,8 @@ export class AppDom {
         "mt-1",
         "rounded-2",
         "overflow-hidden",
-        "shadow-lg"
+        "shadow-lg",
+        "square-container"
       );
       elDiv.innerHTML = `<h3 class="text-primary">${repo.name}</h3>
       <p class="text-white mb-2">${repo.description ? repo.description : "Aucune description"}</p>
@@ -113,7 +113,7 @@ export class AppDom {
       projetDetails.appendChild(elDiv);
       const elUrlDiv = document.createElement("div");
       elUrlDiv.classList.add("col-3", "text-center", "p-2", "fade");
-      elUrlDiv.innerHTML = `<a class=" link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
+      elUrlDiv.innerHTML = `<a class=" btn btn-dark p-2" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
       projetDetails.appendChild(elUrlDiv);
     });
   };
