@@ -28,18 +28,20 @@ Cela permet d'afficher automatiquement mes projets directement sur mon CV, garan
    cd mon-cv
    ```
 2. **Ouvrir index.html dans un navigateur**
+
 Le projet étant une SPA sans framework, il suffit d'ouvrir index.html pour voir le CV fonctionner.
+
 🔥 **Fonctionnalités**
 
-✅ Affichage dynamique des repositories GitHub
+- ✅ Affichage dynamique des repositories GitHub
 
-✅ Graphiques interactifs avec Chart.js
+- ✅ Graphiques interactifs avec Chart.js
 
-✅ Stockage local des données avec IndexedDB via Dexie.js
+- ✅ Stockage local des données avec IndexedDB via Dexie.js
 
-✅ Interface responsive grâce à Bootstrap
+- ✅ Interface responsive grâce à Bootstrap
 
-✅ Expérience fluide sans rechargement de page
+- ✅ Expérience fluide sans rechargement de page
 
 
 📌 **Améliorations futures**
