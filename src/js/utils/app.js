@@ -1,13 +1,11 @@
 import {} from "../axios.min.js";
-import { AppDom } from "./dom.js";
-import { AppStorage } from "./storage.js";
 
 export class App {
-  constructor() {
+  constructor(appDom, appStorage) {
     this.cachePages = new Map();
     this.defaultPage = "about";
-    this.appDom = new AppDom();
-    this.appStorage = new AppStorage();
+    this.appDom = appDom;
+    this.appStorage = appStorage;
   }
 
   async init() {

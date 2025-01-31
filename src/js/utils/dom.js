@@ -1,10 +1,8 @@
-import { ApiRequest } from "../api/github.js";
 import { AppStorage } from "./storage.js";
 
 export class AppDom {
   constructor() {
     this.contentElement = document.getElementById("content");
-    this.apiRequest = new ApiRequest();
     this.appStorage = new AppStorage();
   }
 
@@ -95,6 +93,7 @@ export class AppDom {
 
   displayProjet = async () => {
     const projetDetails = document.getElementById("projet-details");
+    projetDetails.innerHTML = "";
     const projets = await this.appStorage.getRepos();
     projets.forEach((repo) => {
       const elDiv = document.createElement("div");
