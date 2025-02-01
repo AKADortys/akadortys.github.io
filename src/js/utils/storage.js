@@ -8,7 +8,7 @@ export class AppStorage {
     this.db = new Dexie("CVApp");
     this.db.version(1).stores({
       skills: "++id, name, title, description, tools, langagues, skills, lvl",
-      repos: "++id, name, description, html_url, language",
+      repos: "id, name, description, html_url, language",
     });
     this.db.open();
     this.skills = this.db.skills;
@@ -17,7 +17,6 @@ export class AppStorage {
 
   async fetchData() {
     try {
-      console.log("Fetching data");
       const repos = await this.apiRequest.fetchRepos();
       const actualRepos = await this.getRepos();
       if (repos.length === actualRepos.length) {

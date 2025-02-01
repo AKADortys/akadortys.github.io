@@ -115,7 +115,7 @@ export class AppDom {
       projetDetails.appendChild(elDiv);
       const elUrlDiv = document.createElement("div");
       elUrlDiv.classList.add("col-3", "text-center", "p-2", "fade");
-      elUrlDiv.innerHTML = `<a class=" link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
+      elUrlDiv.innerHTML = `<a class="btn btn-primary" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
       projetDetails.appendChild(elUrlDiv);
     });
   };
