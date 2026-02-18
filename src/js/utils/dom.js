@@ -98,25 +98,72 @@ export class AppDom {
     projets.forEach((repo) => {
       const elDiv = document.createElement("div");
       elDiv.classList.add(
-        "col-8",
-        "bg-dark",
+        "col-lg-9",
+        "col-sm-12",
         "fade",
         "p-2",
-        "mt-1",
-        "rounded-2",
-        "overflow-hidden",
-        "shadow-lg",
-        "square-container"
+        "mt-3"
       );
-      elDiv.innerHTML = `<h3 class="text-primary">${repo.name}</h3>
-      <p class="text-white mb-2">${repo.description ? repo.description : "Aucune description"}</p>
-      <span class="text-warning">Language utilisé: ${repo.language ? repo.language : "Aucuns laguages détecté"}</span>
+
+      const topicsHtml = repo.topics
+        ? repo.topics
+          .map(
+            (topic) =>
+              `<span class="badge bg-secondary me-1">${topic}</span>`
+          )
+          .join("")
+        : "";
+
+      const updatedDate = new Date(repo.updated_at).toLocaleDateString("fr-FR", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+
+      elDiv.innerHTML = `
+        <div class="card h-100 bg-dark text-white shadow-lg border-secondary">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title text-primary h5">${repo.name}</h3>
+              <span class="badge bg-info text-dark">${repo.language || "N/A"
+        }</span>
+            </div>
+            
+            <p class="card-text flex-grow-1 text-light small">${repo.description || "Aucune description disponible."
+        }</p>
+            
+            <div class="mb-3">
+              ${topicsHtml}
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center text-muted small mb-3">
+              <div>
+                <i class="bi bi-star-fill text-warning me-1"></i> ${repo.stargazers_count
+        }
+                <i class="bi bi-diagram-2-fill text-light ms-2 me-1"></i> ${repo.forks_count
+        }
+              </div>
+              <div>
+                Mis à jour le ${updatedDate}
+              </div>
+            </div>
+
+            <div class="mt-auto d-flex gap-2">
+              <a href="${repo.html_url
+        }" target="_blank" class="btn btn-outline-primary btn-sm flex-grow-1">
+                <i class="bi bi-github me-1"></i> Code
+              </a>
+              ${repo.homepage
+          ? `<a href="${repo.homepage}" target="_blank" class="btn btn-outline-success btn-sm flex-grow-1">
+                      <i class="bi bi-globe me-1"></i> Demo
+                     </a>`
+          : ""
+        }
+            </div>
+          </div>
+        </div>
       `;
       projetDetails.appendChild(elDiv);
-      const elUrlDiv = document.createElement("div");
-      elUrlDiv.classList.add("col-3", "text-center", "p-2", "fade");
-      elUrlDiv.innerHTML = `<a class="btn btn-primary" href="${repo.html_url}" target="_blank">Lien ici!</a>`;
-      projetDetails.appendChild(elUrlDiv);
     });
   };
 }

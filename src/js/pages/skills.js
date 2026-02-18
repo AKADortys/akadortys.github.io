@@ -16,5 +16,5 @@ initModule = () => {
       300 * (i / 2)
     );
   });
-  app.appDom.displayDetails("mysql");
+  app.appDom.displayDetails("frontend");
 };

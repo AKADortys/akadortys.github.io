@@ -1,4 +1,4 @@
-import {} from "../dexie.min.js";
+import { } from "../dexie.min.js";
 import { ApiRequest } from "../api/github.js";
 import { rawData } from "../data/data.js";
 
@@ -24,12 +24,9 @@ export class AppStorage {
         return;
       }
       this.repos.bulkAdd(repos);
-      const actualSkils = await this.getSkills();
-      if (actualSkils.length === rawData.length) {
-        console.log("Skills are up to date");
-        return;
-      }
-      this.skills.bulkAdd(rawData);
+      await this.skills.clear();
+      await this.skills.bulkAdd(rawData);
+      console.log("Skills updated");
     } catch (error) {
       console.error("Erreur lors de la récupération des données :", error);
     }
